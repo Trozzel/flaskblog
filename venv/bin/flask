@@ -1,4 +1,4 @@
-#!/Users/g0f02ga/Documents/Flask/venv/bin/python3.10
+#!/Users/jorge/Python/FlaskBlog/venv/bin/python3.9
 # -*- coding: utf-8 -*-
 import re
 import sys

@@ -1,4 +1,4 @@
-#!/Users/g0f02ga/Documents/Flask/venv/bin/python3.10
+#!/Users/jorge/Python/FlaskBlog/venv/bin/python3.9
 # EASY-INSTALL-ENTRY-SCRIPT: 'ipdb==0.13.9','console_scripts','ipdb3'
 import re
 import sys
