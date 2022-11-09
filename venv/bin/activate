@@ -30,6 +30,9 @@ deactivate () {
     unset VIRTUAL_ENV
     unset EMAIL_USER
     unset EMAIL_PASS
+    unset MAIL_SERVER
+    unset SECRET_KEY
+    unset SQLALCHEMY_DATABASE_URI
     if [ ! "${1:-}" = "nondestructive" ] ; then
     # Self destruct!
         unset -f deactivate
@@ -42,9 +45,13 @@ deactivate nondestructive
 VIRTUAL_ENV="/Users/jorge/Python/FlaskBlog/venv"
 export VIRTUAL_ENV
 
-# Send email parameters
+# Environment variables for flaskblog
 export EMAIL_USER='trozzel@gmail.com'
 export EMAIL_PASS='pvhpmteojhfaclwz'
+export MAIL_SERVER='smtp.googlemail.com'
+export MAIL_PORT=587
+export SECRET_KEY='1431ed143189dd0877e2484c94563e0f'
+export SQLALCHEMY_DATABASE_URI='sqlite:///site.db'
 
 _OLD_VIRTUAL_PATH="$PATH"
 PATH="$VIRTUAL_ENV/bin:$PATH"

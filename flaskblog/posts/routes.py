@@ -4,7 +4,7 @@ from flask import render_template, url_for, flash, redirect, request, abort, Blu
 from flaskblog.posts.forms import PostForm
 from flaskblog.models import Post
 
-posts = Blueprint("users", __name__)
+posts = Blueprint("posts", __name__)
 
 
 @posts.route("/post/new", methods=["GET", "POST"])
